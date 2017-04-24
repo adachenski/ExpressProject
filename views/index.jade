@@ -1,0 +1,21 @@
+html
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(href='/styles/index.css' rel='stylesheet')
+    title= title
+body
+    h1 heading
+    
+    p= firstParagraph
+
+    - var env = 'dev';
+        
+    - if(env === 'dev'){
+        p In dev Mode
+    - }else{
+        p Not dev mode
+    - }
+
+    block content
