@@ -1,0 +1,17 @@
+html
+head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title= title
+body
+    h3 Customer Details
+    form(id='form', method='post', action='/customers/editCustomer/#{customer.id}')
+        label(for='name') name
+        input(type='text' id='name' name='name' value='#{customer.name}')
+        label(for='email') email
+        input(type='email' id='email' name='email' value='#{customer.email}')
+        label(for='telephone') telephone
+        input(type='tel' id='telephone' name='telephone' value='#{customer.telephone}')
+        input(type='submit' value='Update Customer')
+    

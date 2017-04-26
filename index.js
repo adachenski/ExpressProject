@@ -17,6 +17,9 @@ app.get('/', home);
 app.get('/contact', customers.contact);
 //app.get('/:viewname', customers.view);
 app.get('/customers', customers.render);
+app.get('/customers/details/:id', customers.details);
+app.get('/customers/editCustomer/:id', customers.edit);
+app.post('/customers/editCustomer/:id', customers.editCustomer);
 app.get('/customers/create', customers.create);
 app.post('/customers/create', customers.createCustomer);
 
